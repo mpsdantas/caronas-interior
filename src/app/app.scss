@@ -1,0 +1,124 @@
+// http://ionicframework.com/docs/theming/
+$fa-font-path: "../assets/fonts" !default; 
+@import "font-awesome"; 
+i[class^="fa-"], ion-icon[class^="fa-"] {    
+   font-family: "FontAwesome" !important;
+}
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+/* CONFIGURAÇÕES DE ESTILO PARA IOS */
+.tabs-ios .tabbar {
+    background: #EEEEEE;
+};
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    color: #0277BD;
+}
+
+.tabs-ios .tab-button-icon {
+    color: #212121;
+}
+
+.tab-button-text[aria-selected=true]{
+    color: #E0E0E0;
+}
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-text {
+    color: #0277BD;
+}
+
+.tabs-ios .tab-button[aria-selected=false] .tab-button-text {
+    color: #212121;
+}
+.content-ios {
+    color: #EEEEEE;
+    background-color: #0277BD;
+}
+.toolbar-background-ios {
+    background: #0277BD;
+}
+.toolbar-title-ios {
+    color: #EEEEEE;
+}
+/* CONFIGURAÇÕES DE ESTILO PARA IOS */
+
+/* CONFIGURAÇÕES DE ESTILO PARA ANDROID */
+.tabs-md .tabbar {
+    background: #EEEEEE;
+};
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+    color: #0277BD;
+}
+
+.tabs-md .tab-button-icon {
+    color: #212121;
+}
+
+.tab-button-text[aria-selected=true]{
+    color: #E0E0E0;
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-text {
+    color: #0277BD;
+}
+
+.tabs-md .tab-button[aria-selected=false] .tab-button-text {
+    color: #212121;
+}
+.content-md {
+    color: #EEEEEE;
+    background-color: #0277BD;
+}
+.toolbar-background-md {
+    background: #0277BD;
+}
+.toolbar-title-md {
+    color: #EEEEEE;
+}
+/* CONFIGURAÇÕES DE ESTILO PARA ANDROID  */
+
+
+/* CONFIGURAÇÕES DE ESTILO PARA Windows Phone */
+.tabs-wp .tabbar {
+    background: #0277BD;
+};
+
+.tabs-wp .tab-button[aria-selected=true] .tab-button-icon {
+    color: #EEEEEE;
+}
+
+.tabs-wp .tab-button-icon {
+    color: #212121;
+}
+
+.tab-button-text[aria-selected=true]{
+    color: #E0E0E0;
+}
+
+.tabs-wp .tab-button[aria-selected=true] .tab-button-text {
+    color: #EEEEEE;
+}
+
+.tabs-wp .tab-button[aria-selected=false] .tab-button-text {
+    color: #212121;
+}
+
+.content-wp {
+    color: #EEEEEE;
+    background-color: #0277BD;
+}
+/* CONFIGURAÇÕES DE ESTILO PARA ANDROID  */
