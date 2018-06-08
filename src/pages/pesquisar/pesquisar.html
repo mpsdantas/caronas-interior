@@ -6,13 +6,28 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Pesquisar caronas</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Pesquisar caronas</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <ion-item>
+        <ion-label stacked>De:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
 
+    <ion-item>
+        <ion-label stacked>Para:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label stacked>Data:</ion-label>
+        <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+        <button style="padding: 1.5em; border-radius: 1.5em;" ion-button color="dark" full medium>Pesquisar</button>
+    </ion-item>
 </ion-content>

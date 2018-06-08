@@ -1,11 +1,42 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Adicionar carona
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    <ion-item>
+        <ion-label stacked>De:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
 
+    <ion-item>
+        <ion-label stacked>Para:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label stacked>Vagas:</ion-label>
+        <ion-select [(ngModel)]="vagas">
+            <ion-option value="1">1</ion-option>
+            <ion-option value="2">2</ion-option>
+            <ion-option value="3">3</ion-option>
+            <ion-option value="4">4</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label stacked>Ajuda:</ion-label>
+        <ion-select [(ngModel)]="ajuda">
+            <ion-option value="Sim">Sim</ion-option>
+            <ion-option value="Não">Não</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label stacked>Data:</ion-label>
+        <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+        <button style="padding: 1.5em; border-radius: 1.5em;" ion-button color="dark" full medium>Adicionar carona</button>
+    </ion-item>
 </ion-content>
